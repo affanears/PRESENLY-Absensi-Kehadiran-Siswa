@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Absensi Sekolah</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-school"></i>
+            <span>PRESENLY</span>
+        </div>
+
+        <ul>
+
+            <li data-page="dashboard">
+                <i class="fas fa-home"></i>
+                Dashboard
+            </li>
+
+            <li data-page="barcode">
+                <i class="fas fa-camera"></i>
+                Absen Barcode
+            </li>
+
+            <li data-page="barcode-siswa">
+                <i class="fas fa-qrcode"></i>
+                Barcode Siswa
+            </li>
+
+            <li data-page="absensi">
+                <i class="fas fa-clipboard-check"></i>
+                Absensi Siswa
+            </li>
+
+            <li data-page="siswa">
+                <i class="fas fa-user-graduate"></i>
+                Data Siswa
+            </li>
+
+            <li data-page="kelas">
+                <i class="fas fa-door-open"></i>
+                Data Kelas
+            </li>
+
+            <li data-page="rekap">
+                <i class="fas fa-file-excel"></i>
+                 Rekap
+            </li>
+
+            </li>
+
+            <li data-page="tentang">
+                <i class="fas fa-school-flag"></i>
+                Tentang Sekolah
+            </li>
+
+            <li id="logoutBtn">
+                <i class="fas fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <div class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h2>Absensi Sekolah</h2>
+            </div>
+
+            <div class="user-box">
+
+                <i class="fas fa-user-circle"></i>
+
+                <span id="userLogin">
+                    User
+                </span>
+
+            </div>
+
+        </header>
+
+        <main id="content">
+
+        </main>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<script src="js/supabase.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/data-kelas.js"></script>
+<script src="js/data-siswa.js"></script>
+<script src="js/barcode-siswa.js"></script>
+<script src="js/absen-barcode.js"></script>
+<script src="js/absensi-siswa.js"></script>
+<script src="js/tentang-sekolah.js"></script>
+
+
+</body>
+</html>
